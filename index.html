@@ -12,15 +12,19 @@
         <h1 id="login-title">Logim</h1>
         <p>Informe seus dados para acessar o sistema.</p>
 
-        <form>
+        <form id="login-form">
           <label for="usuario">Usuário</label>
           <input id="usuario" name="usuario" type="text" autocomplete="username" required />
 
           <label for="senha">Senha</label>
           <input id="senha" name="senha" type="password" autocomplete="current-password" required />
+
+          <button type="submit">Entrar</button>
+          <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
 
