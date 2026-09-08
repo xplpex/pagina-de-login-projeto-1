@@ -3,11 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Logim</title>
   </head>
   <body>
     <main>
-      <h1>Projeto em construção</h1>
+      <section class="login-card" aria-labelledby="login-title">
+        <h1 id="login-title">Logim</h1>
+        <p>Informe seus dados para acessar o sistema.</p>
+
+        <form>
+          <label for="usuario">Usuário</label>
+          <input id="usuario" name="usuario" type="text" autocomplete="username" required />
+
+          <label for="senha">Senha</label>
+          <input id="senha" name="senha" type="password" autocomplete="current-password" required />
+        </form>
+      </section>
     </main>
   </body>
 </html>
